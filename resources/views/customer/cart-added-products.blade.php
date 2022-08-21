@@ -9,7 +9,7 @@
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">
     <!-- <img  width="30" height="30" alt=""> -->
-      <h1 class="text-center">Url Shorter</h1>
+      <h1 class="text-center">Cart List</h1>
     </a>
   </nav>
   <div class="container">

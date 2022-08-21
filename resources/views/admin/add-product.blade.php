@@ -9,7 +9,7 @@
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">
     <!-- <img  width="30" height="30" alt=""> -->
-      <h1 class="text-center">Url Shorter</h1>
+      <h1 class="text-center">Add Product</h1>
     </a>
   </nav>
   <div class="container">
@@ -56,8 +56,10 @@
           <thead>
             <tr>
               <th>ID</th>
-              <th>Url</th>
-              <th>Short Url</th>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Product Images</th>
+
             </tr>
           </thead>
             <tbody>
@@ -65,10 +67,10 @@
                 <tr>
                   <td>{{ $product->id }}</td>
                   <td>{{ $product->product_name }}</td>
+                  <td>{{ $product->price }}</td>
                   <td>
                     @foreach($product->productImages as $productImage)
-                    <img src="{{ asset($productImage->path) }}" height="30px" width="30px">
-                      <img class="" src="{{ asset('storage/product-images/szsEFDmHHykls4UJpmzjJ5csbkuLLhuPzzQVBe9X.jpg') }}"  alt="">
+                    <img src="{{$productImage->path}}" height="30px" width="30px">
                     @endforeach
                   </td>
                 </tr>
